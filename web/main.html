@@ -9,16 +9,16 @@
 <h1>学生入力フォーム</h1>
 <form name="Form" method="POST" action="cgi-bin/form.py">
     <h3>学籍番号</h3>
-        <input type="text" name="number">
+        <input type="text" name="number" placeholder="半角数字" pattern="^[0-9]+$" required>
         ＊必須項目、半角数字
     <br>
     <h3>名前</h3>
-        <input type="text" name="name">
+        <input type="text" name="name" required>
         ＊必須項目
     <br>
     <h3>年齢</h3>
-        <select name="age">
-            <option value="">選択してください</option>
+        <select name="age" required>
+            <option value="" disabled selected required>選択してください</option>
             <option value="18">18</option>
             <option value="19">19</option>
             <option value="20">20</option>
