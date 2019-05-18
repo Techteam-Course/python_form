@@ -24,14 +24,14 @@ con.close()
 print('Content-type:text/html;charset=utf-8')
 
 print("""
-     <html>
-       <head>
-           <meta http-equiv=\”Content-Type\” content=\ “text/html
-           charset=utf-8\” / >
-       </head>
-     <body>
-         <form name="registration" method="GET" action="/cgi-bin/input.py">
+    <html>
+      <head>
+          <meta http-equiv=\”Content-Type\” content=\ “text/html
+          charset=utf-8\” / >
+      </head>
+    <body>
+        <form name="registration" method="GET" action="http://localhost:8000/main.html">
             <input type="submit" value="登録はこちら" name="registration">
-         </form>
-       """ + student_list + """ </body>
-     """)
+        </form>
+      """ + student_list + """ </body>
+    """)

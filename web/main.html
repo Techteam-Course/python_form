@@ -7,13 +7,13 @@
 
 <body>
 <h1>学生入力フォーム</h1>
-<form name="Form" method="POST" action="cgi-bin/form.py">
+<form name="form" method="POST" action="cgi-bin/confirm.py">
     <h3>学籍番号</h3>
-        <input type="text" name="number" placeholder="半角数字" pattern="^[0-9]+$" required>
+        <input type="text" name="student_id" placeholder="半角数字" pattern="^[0-9]+$" required>
         ＊必須項目、半角数字
     <br>
     <h3>名前</h3>
-        <input type="text" name="name" required>
+        <input type="text" name="your_name" required>
         ＊必須項目
     <br>
     <h3>年齢</h3>
@@ -32,7 +32,7 @@
         </select>
     <br>
     <h3>備考欄</h3>
-        <textarea name="note"></textarea>
+        <textarea name="bikou"></textarea>
     <br>
     <input type="submit" value="送信" name="button">
 </form>
