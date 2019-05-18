@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+<meta charset="utf-8">
+<title>学生入力フォーム</title>
+</head>
+
+<body>
+<h1>学生入力フォーム</h1>
+<form name="Form" method="POST" action="cgi-bin/form.py">
+    <h3>学籍番号</h3>
+        <input type="text" name="number">
+        ＊必須項目、半角数字
+    <br>
+    <h3>名前</h3>
+        <input type="text" name="name">
+        ＊必須項目
+    <br>
+    <h3>年齢</h3>
+        <select name="age">
+            <option value="">選択してください</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+        </select>
+    <br>
+    <h3>備考欄</h3>
+        <textarea name="note"></textarea>
+    <br>
+    <input type="submit" value="送信" name="button">
+</form>
+</body>
+</html>
