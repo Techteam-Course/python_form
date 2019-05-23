@@ -40,7 +40,7 @@ print(
       </head>
     <body>
       <p>登録が完了しました。<P>
-      <a href='http://localhost:8000/cgi-bin/index.py'>TOPへ戻る</a>
+      <a href='index.py'>TOPへ戻る</a>
     </body>
     """
 )

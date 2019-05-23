@@ -29,13 +29,13 @@ print(
         charset=utf-8\” / >
     </head>
     <body>
-        <p>お名前:{0[your_name]}</p>
         <p>学籍番号:{0[student_id]}</p>
+        <p>名前:{0[your_name]}</p>
         <p>年齢:{0[age]}</p>
         <p>備考:{0[bikou]}</p>
         <p>以上の内容で登録しますか</p>
         <p>登録される場合はokを押してください</p>
-        <a href="http://localhost:8000/cgi-bin/complete.py?student_id={0[student_id]}&your_name={0[your_name]}&age={0[age]}&bikou={0[bikou]}">ok</a>
+        <a href="complete.py?student_id={0[student_id]}&your_name={0[your_name]}&age={0[age]}&bikou={0[bikou]}">ok</a>
     </body>
     """.format(li)
 )
